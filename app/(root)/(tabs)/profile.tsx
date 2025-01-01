@@ -31,7 +31,6 @@ const Profile = () => {
     const {user, refetch} = useGlobalContext();
     const handleLogout = async () => {
         const result = await logout();
-
         if(result) {
             Alert.alert('Success',"You have been Logged Out")
             refetch();
